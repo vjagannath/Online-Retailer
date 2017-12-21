@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Smart Portables</display-name>
+
+  <welcome-file-list>
+    <welcome-file>Home</welcome-file>
+  </welcome-file-list>
+
+  <!--Forcing the server to start the servlet which reads the product details from the file-->
+  <!--<servlet>
+    <servlet-name>Startup</servlet-name>
+    <servlet-class>Startup</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>-->
+
+  <servlet>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <servlet-class>AddOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <url-pattern>/AddOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>AddProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/AddProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <servlet-class>AutoCompleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <url-pattern>/AutoCompleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckOutServlet</servlet-name>
+    <servlet-class>CheckOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckOutServlet</servlet-name>
+    <url-pattern>/CheckOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <servlet-class>DeleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <url-pattern>/DeleteOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>DeleteProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/DeleteProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InventoryServlet</servlet-name>
+    <servlet-class>InventoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InventoryServlet</servlet-name>
+    <url-pattern>/InventoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrderCancellingServlet</servlet-name>
+    <servlet-class>OrderCancellingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderCancellingServlet</servlet-name>
+    <url-pattern>/OrderCancellingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrderHandlerServlet</servlet-name>
+    <servlet-class>OrderHandlerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderHandlerServlet</servlet-name>
+    <url-pattern>/OrderHandlerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrderTrackingServlet</servlet-name>
+    <servlet-class>OrderTrackingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderTrackingServlet</servlet-name>
+    <url-pattern>/OrderTrackingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrderViewServlet</servlet-name>
+    <servlet-class>OrderViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderViewServlet</servlet-name>
+    <url-pattern>/OrderViewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductSelection</servlet-name>
+    <servlet-class>ProductSelection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductSelection</servlet-name>
+    <url-pattern>/ProductSelection</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReviewServlet</servlet-name>
+    <servlet-class>ReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReviewServlet</servlet-name>
+    <url-pattern>/ReviewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SalesmanServlet</servlet-name>
+    <servlet-class>SalesmanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesmanServlet</servlet-name>
+    <url-pattern>/SalesmanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SalesReportServlet</servlet-name>
+    <servlet-class>SalesReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesReportServlet</servlet-name>
+    <url-pattern>/SalesReportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SigninServlet</servlet-name>
+    <servlet-class>SigninServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SigninServlet</servlet-name>
+    <url-pattern>/SigninServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>StoreManagerServlet</servlet-name>
+    <servlet-class>StoreManagerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreManagerServlet</servlet-name>
+    <url-pattern>/StoreManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TrendServlet</servlet-name>
+    <servlet-class>TrendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrendServlet</servlet-name>
+    <url-pattern>/TrendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <servlet-class>UpdateOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <url-pattern>/UpdateOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <servlet-class>UpdateProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <url-pattern>/UpdateProductServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
