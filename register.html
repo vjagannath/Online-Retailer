@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <link rel="stylesheet" href="styles.css" type="text/css" />
+	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<title>
+			Smart Portables Registration
+		</title>
+	  <style>
+		body {
+				color:white;
+				padding:10px 20px 10px 10px;
+				border:1px solid black;
+				margin:50px auto;
+				box-shadow: 0px 0px 30px gray;
+		}
+	  </style>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+	    	<div class="width">
+		    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+		        <h3>The best ever deal you can get</h3>
+		    </div>
+				<!-- <a href="Home?id=1" style='font-weight: bold;float:right'>Home</a> -->
+	    </header>
+			<div id="width">
+				<article>
+		    	<h3>Create Account</h3>
+			  </article>
+				<article>
+					<form method="post" action="RegistrationServlet">
+						<table>
+							<tr>
+								<td>User name</td>
+								<td>
+									<input style="color:white" type="text" name="userId" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Password</td>
+								<td>
+									<input style="color:white" type="password" name="password" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Confirm Password</td>
+								<td>
+									<input style="color:white" type="password" name="confirmPassword" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input style="color:white" type="submit" value="Continue">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</article>
+			</div>
+			<footer>
+        <div class="footer-content width">
+          <ul>
+            <li><h2>Helpful Links</h2></li>
+            <li><a href="Home?id=2">About Us</a></li>
+            <li><a href="Home?id=3">Contact Us</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy;2017 Developed by Vinay Jagannath</p>
+        </div>
+      </footer>
+	  </div>
+	</body>
+</html>

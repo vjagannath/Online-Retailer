@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+          <h1><a href="/">Smart<span>Portables</span></a></h1>
+          <h3>The best ever deal you can get</h3>
+      </div>
+	 <a href="UpdateProductServlet?id=1" style='font-weight: bold;float:right'>Home</a>
+    </header>
+    <h2>Update Product</h2>
+    <form method='post' action="UpdateProductServlet">
+      <table>
+        <tr>
+          <td>Product Id</td>
+          <td><input style="color:white" type="text" name="productId" required/></td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td><input style="color:white" type="text" name="productPrice" required/></td>
+        </tr>
+        <tr>
+          <td>Retailer Discount</td>
+          <td><input style="color:white" type="text" name="productRetailerDiscount" required/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer Rebate</td>
+          <td><input style="color:white" type="text" name="productManufacturerRebate" required/></td>
+        </tr>
+        <tr>
+          <td>Zip</td>
+          <td><input style="color:white" type="text" name="productRetailerZip" required/></td>
+        </tr>
+        <tr>
+          <td><input style="color:white" type="submit" value="Update"/></td>
+        </tr>
+      </table>
+    </form>
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

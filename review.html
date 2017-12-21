@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+        <h3>The best ever deal you can get</h3>
+      </div>
+    </header>
+    <h2>Product Review</h2>
+    <form method='get' action="ReviewServlet">
+      <table>
+        <tr>
+          <td>Product Model Name</td>
+          <td><input style="color:white" type="text" name="productName" readonly/></td>
+        </tr>
+        <tr>
+          <td>Product Category</td>
+          <td><input style="color:white" type="text" name="productType" readonly/></td>
+        </tr>
+        <tr>
+          <td>Product Price</td>
+          <td><input style="color:white" type="text" name="productPrice" readonly/></td>
+        </tr>
+        <tr>
+          <td>Retailer Name</td>
+          <td><input style="color:white" type="text" name="productRetailer" readonly/></td>
+        </tr>
+        <tr>
+          <td>Retailer Zip</td>
+          <td><input style="color:white" type="text" name="productRetailerZip" readonly/></td>
+        </tr>
+        <tr>
+          <td>Retailer City</td>
+          <td><input style="color:white" type="text" name="productRetailerCity" readonly/></td>
+        </tr>
+        <tr>
+          <td>Retailer State</td>
+          <td><input style="color:white" type="text" name="productRetailerState" readonly/></td>
+        </tr>
+        <tr>
+          <td>Product On Sale</td>
+          <td><input style="color:white" type="text" name="productOnSale" readonly/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer Name</td>
+          <td><input style="color:white" type="text" name="productManufacturer" readonly/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer Rebate</td>
+          <td><input style="color:white" type="text" name="productManufacturerRebate" readonly/></td>
+        </tr>
+        <tr>
+          <td>User Id</td>
+          <td><input style="color:white" type="text" name="userId" readonly/></td>
+        </tr>
+        <tr>
+          <td>User Age</td>
+          <td><input style="color:white" type="text" name="userAge" required/></td>
+        </tr>
+        <tr>
+          <td>User Gender</td>
+          <td>
+               <input type="radio" name="userGender" value="male" checked="true">Male</input>
+               <input type="radio" name="userGender" value="female">Female</input>
+          </td>
+        </tr>
+        <tr>
+          <td>User Occupation</td>
+          <td><input style="color:white" type="text" name="userOccupation" required /></td>
+        </tr>
+        <tr>
+          <td>Review Rating</td>
+          <td>
+               <input type="radio" name="reviewRating" value="1">1 Star</input>
+               <input type="radio" name="reviewRating" value="2">2 Stars</input>
+               <input type="radio" name="reviewRating" value="3">3 Stars</input>
+               <input type="radio" name="reviewRating" value="4">4 Stars</input>
+               <input type="radio" name="reviewRating" value="5" checked="true">5 Stars</input>
+          </td>
+        </tr>
+        <tr>
+          <td>Review Date</td>
+          <td><input style="color:white; width:200px" type="text" name="reviewDate" readonly/></td>
+        </tr>
+        <tr>
+          <td>Review Text</td>
+          <td><textarea style="color:white; width:500px; height:50px" type="text" name="reviewText"></textarea></td>
+        </tr>
+        <tr>
+          <td><input style="color:white" type="submit" value="Submit Review"/></td>
+          <td><input type='hidden' name='productId'/></td></td>
+        </tr>
+      </table>
+    </form>
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

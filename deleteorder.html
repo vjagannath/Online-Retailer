@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+        <h3>The best ever deal you can get</h3>
+      </div>
+      <a href="DeleteOrderServlet?id=1" style='font-weight: bold;float:right'>Home</a>
+    </header>
+    <h2>Delete Order</h2>
+    <form method="post" action="DeleteOrderServlet">
+      <table>
+        <tr>
+          <td>User Id </td>
+          <td><input style="color:white" type="text" name="userId" required/></td>
+        </tr>
+        <tr>
+          <td>Order Id to be deleted</td>
+          <td><input style="color:white" type="text" name="orderId" required/></td>
+        </tr>
+        <tr>
+          <td><input style="color:white" type="submit" value="Delete"/></td>
+        </tr>
+      </table>
+    </form>
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

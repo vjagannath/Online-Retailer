@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <style>
+    body {
+        color:white;
+        padding:10px 20px 10px 10px;
+        border:1px solid black;
+        margin:50px auto;
+        box-shadow: 0px 0px 30px gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+        <h3>The best ever deal you can get</h3>
+      </div>
+      <a href="Home?id=1" style='font-weight: bold;float:right'>Home</a>
+    </header>
+    <div id="width">
+      <!--<section id="content">-->
+        <article>
+          <h3><br/>Welcome to Smart portables</h3>
+          <p>
+            Welcome to Smart portables, the best online retailer website
+          </p>
+          <p>
+            Name the product. We assure you for the best deal you can think ok !!!!!!
+          </p>
+        </article>
+        <article>
+          <h3>Enter your Login Credentials</h3>
+        </article>
+        <article>
+          <form method="post" action="SigninServlet">
+            <table>
+              <tr>
+                <td>ID</td>
+                <td>
+                  <input style="color:white" type="text" name="userId" required></input>
+                </td>
+              </tr>
+              <tr>
+                <td>PASSWORD</td>
+                <td>
+                  <input style="color:white" type="password" name="password" required></input>
+                </td>
+              </tr>
+              <tr>
+                <td>SIGN IN AS</td>
+                <td>
+                  <input type="radio" name="userType" value="storemanager">Store Manager</input>
+                  <input type="radio" name="userType" value="customer" checked="true">Customer</input>
+                  <input type="radio" name="userType" value="salesman">Salesman</input>
+                </td>
+              </tr>
+              <tr>
+				<td>
+					<input style="color:white" type="submit" value = "Login" name="login"/>
+				</td>
+			 </tr>
+            </table>
+          </form>
+        </article>
+      <!--</section>-->
+    </div>
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

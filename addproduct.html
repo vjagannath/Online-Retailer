@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+        <h3>The best ever deal you can get</h3>
+      </div>
+      <a href="AddProductServlet?id=1" style='font-weight: bold;float:right'>Home</a>
+    </header>
+    <h2>Add Product</h2>
+    <form method='post' action="AddProductServlet">
+      <table>
+        <tr>
+          <td>Product Id</td>
+          <td><input style="color:white" type="text" name="productId" required/></td>
+        </tr>
+        <tr>
+          <td>Product Name</td>
+          <td><input style="color:white" type="text" name="productName" required/></td>
+        </tr>
+        <tr>
+          <td>Product Image</td>
+          <td><input style="color:white" type="text" name="productImage" required/></td>
+        </tr>
+        <tr>
+          <td>Retailer</td>
+          <td><input style="color:white" type="text" name="productRetailer" required/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer</td>
+          <td><input style="color:white" type="text" name="productManufacturer" required/></td>
+        </tr>
+        <tr>
+          <td>Condition</td>
+          <td><input style="color:white" type="text" name="productCondition" required/></td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td><input style="color:white" type="text" name="productType" required/></td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td><input style="color:white" type="text" name="productPrice" required/></td>
+        </tr>
+        <tr>
+          <td>Retailer Discount</td>
+          <td><input style="color:white" type="text" name="productRetailerDiscount" required/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer Rebate</td>
+          <td><input style="color:white" type="text" name="productManufacturerRebate" required/></td>
+        </tr>
+        <tr>
+          <td>Zip</td>
+          <td><input style="color:white" type="text" name="productZip" required/></td>
+        </tr>
+        <tr>
+          <td><input style="color:white" type="submit" value="Add"/></td>
+        </tr>
+      </table>
+    </form>
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

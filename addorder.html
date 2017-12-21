@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Smart Portables</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="width">
+    		<h1><a href="/">Smart<span>Portables</span></a></h1>
+        <h3>The best ever deal you can get</h3>
+      </div>
+      <a href="AddOrderServlet?id=1" style='font-weight: bold;float:right'>Home</a>
+    </header>
+    <h2>Add Order</h2>
+    
+    <div id="body" class="width">
+    	<section id="content">
+    		<article>
+    		 <ul>
+    		  <li>
+				<form method="post" action="OrderViewServlet">
+					<table>
+					  <tr>
+					    <td>Adding Order for User Id</td>
+					    <td><input style="color:white" type="text" name="userId" required/></td>
+					  	<td><input style="color:white; float:right" type="submit" value="Place Order"/></td>
+					 </tr>
+					</table>
+			   </form>
+			  </li>
+			  </ul>
+    		</article>
+    	</section>
+   		<aside class="sidebar">
+	        <ul>
+	          <li>
+	            <h4>Categories</h4>
+	            <ul>
+	               <li class=""><a href="AddOrderServlet?category=SmartWatch">Smart Watch</a></li>
+	               <li class=""><a href="AddOrderServlet?category=Speaker">Speaker</a></li>
+	               <li class=""><a href="AddOrderServlet?category=HeadPhone">Head Phone</a></li>
+	               <li class=""><a href="AddOrderServlet?category=Phone">Phone</a></li>
+	               <li class=""><a href="AddOrderServlet?category=Laptop">Laptop</a></li>
+	               <li class=""><a href="AddOrderServlet?category=ExternalStorage">External Storage</a></li>
+	            </ul>
+	            <h4>Offer Zone</h4>
+	              <ul>
+	                <li class=""><a href="AddOrderServlet?id=1">Retailer Warranty</a></li>
+	              </ul>
+	          </li>
+	        </ul>
+	    </aside>
+	    <div class="clear"></div>
+    </div>        
+    <footer>
+      <div class="footer-content width">
+        <ul>
+          <li><h2>Helpful Links</h2></li>
+          <li><a href="Home?id=2">About Us</a></li>
+          <li><a href="Home?id=3">Contact Us</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2017 Developed by Vinay Jagannath</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
